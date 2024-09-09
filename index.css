@@ -66,7 +66,7 @@ header {
   transform: translateX(-50%);
   width: 100%;
   display: none;
-  z-index: 10; /* Add z-index to bring it to the front */
+  z-index: 10; 
 }
 
 .category-dropdown ul {
@@ -104,7 +104,7 @@ main {
 }
 
 .product-card {
-  background-color: #3c506d;
+  background-color: #f59e0b;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
@@ -117,6 +117,8 @@ main {
   height: 200px;
   object-fit: cover;
 }
+
+
 
 .product-info {
   padding: 15px;
@@ -192,14 +194,14 @@ main {
   right: 10px;
 }
 .actions img{
-  height: 30px; /* Ajusta el tamaño como desees */
+  height: 30px;
 }
 .product-card .product-info h3 {
-  margin-bottom: 5px; /* Agrega un margen inferior para que haya espacio entre el título y la descripción */
+  margin-bottom: 5px;
 }
 
 .product-card .product-info p {
-  margin-bottom: 10px; /* Agrega un margen inferior para que haya espacio entre la descripción y los botones */
+  margin-bottom: 10px;
 }
 .user-actions span {
   display: inline-block;
@@ -211,7 +213,7 @@ main {
 .user-icon {
   width: 50px; 
   height: 50px;
-  background-image: url("cart-icon.png");
+  background-image: url("user-icon.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -262,7 +264,7 @@ main {
 .heart-icon {
   width: 50px; 
   height: 50px;
-  background-image: url("cart-icon.png");
+  background-image: url("heart-icon.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -278,21 +280,29 @@ main {
 }
 
 
-.heart-icon-product {
-  width: 50px; 
-  height: 50px;
-  background-image: url("heart-icon.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  cursor: pointer;
-}
-
-.heart-icon-product-button {
+.actions button {
   display: inline-block;
-  padding: 1px;
+  padding: 10px;
   border: none;
   background-color: transparent;
   cursor: pointer;
-  z-index: 1000;
+  z-index: 100;
+  width: 50px; 
+  height: 50px;
 }
+
+.button-ver {
+  background-color: #3c506d;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 2px;
+  cursor: pointer;
+  border-radius: 10px;
+  z-index: 100;
+}
+
